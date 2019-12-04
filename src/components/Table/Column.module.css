@@ -1,0 +1,16 @@
+.split {
+  position: absolute;
+  left: -1px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+
+  cursor: e-resize;
+}
+.split:after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  left: -2px;
+}

@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Table, { Column } from './components/Table';
+import tableData from './tmp/tableData';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Table data={tableData}>
+        <Column title="供应商名称" dataIndex="supplier_name" />
+        <Column title="姓名" dataIndex="name" />
+        <Column title="手机号" dataIndex="mobile" />
+        <Column title="账号" dataIndex="account" />
+        <Column title="登陆时间" dataIndex="login_time" />
+        <Column title="登陆IP" dataIndex="client_ip" />
+      </Table>
     </div>
   );
 }

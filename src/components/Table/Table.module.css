@@ -1,0 +1,11 @@
+.table th {
+  position: relative;
+}
+.table th:first-child i {
+  display: none;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ccc;
+}
